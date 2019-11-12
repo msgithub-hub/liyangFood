@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/entry/entry",
+    "pages/checkIn/checkIn",
+    "pages/upload_video/upload_video",
+    "pages/imageVideo/imageVideo",
+    "pages/answer/answer",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/checkIn_player/checkIn_player",
+    "pages/register/register",
+    "pages/map/map",
+    "pages/video/video",
+    "pages/manStyle/manStyle",
+    "pages/digitalMap/digitalMap",
+    "pages/bigRuleImg/bigRuleImg",
+    "pages/camera/camera",
+    "pages/module/module",
+    "pages/activityManual/activityManual",
+    "pages/leaderboard/leaderboard",
+    "pages/treasure/treasure",
+    "pages/group/group"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "溧阳美食",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "测试"
+    }
+  },
+  "usingComponents": {}
+}

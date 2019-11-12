@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+.content {
+    width: 100vw;
+    min-height: 100vh;
+    background: #fff6db;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+.wave {
+    position: relative;
+    overflow: hidden;
+}
+.wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: -o-radial-gradient(circle, #666 10%, transparent 10.01%);
+    background-image: radial-gradient(circle, #666 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-transform: scale(10, 10);
+        -ms-transform: scale(10, 10);
+            transform: scale(10, 10);
+    opacity: 0;
+    -webkit-transition: opacity .5s, -webkit-transform .3s;
+    transition: opacity .5s, -webkit-transform .3s;
+    -o-transition: transform .3s, opacity .5s;
+    transition: transform .3s, opacity .5s;
+    transition: transform .3s, opacity .5s, -webkit-transform .3s;
+}
+.wave:active:after {
+    -webkit-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+            transform: scale(0, 0);
+    opacity: .3;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+}
+.wave:active {
+    opacity: .8;
+}
+.logo_bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 350rpx;
+}
+/*模态框弹出窗口的动画*/
+@-webkit-keyframes moveUpAnimate {
+0% {
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+}
+100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+}
+}
+@keyframes moveUpAnimate {
+0% {
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+}
+100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+}
+}
+.moveUpAnimate {
+    -webkit-animation: moveUpAnimate .5s;
+            animation: moveUpAnimate .5s;
+}
+@-webkit-keyframes fadeInAnimate {
+0% {
+        opacity: 0;
+}
+100% {
+        opacity: 1;
+}
+}
+@keyframes fadeInAnimate {
+0% {
+        opacity: 0;
+}
+100% {
+        opacity: 1;
+}
+}
+.fadeInAnimate {
+    -webkit-animation: fadeInAnimate 0.5s;
+            animation: fadeInAnimate 0.5s;
+}
+
+
